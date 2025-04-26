@@ -10,5 +10,6 @@ export default [
   route("/register", "routes/register.tsx"),
   route("/register/company", "routes/register/company.tsx"),
   route("/register/personal", "routes/register/personal.tsx"),
-  route("/advertisements", "routes/advertisements.tsx"),
+  route("/company-ads", "routes/company-ads.tsx"),
+  route("/personal-ads", "routes/personal-ads.tsx"),
 ] satisfies RouteConfig;

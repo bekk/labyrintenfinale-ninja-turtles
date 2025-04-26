@@ -39,7 +39,7 @@ export function AdCard({ ad }: { ad: Advertisement }) {
         <div className="flex justify-end mt-auto">
           <button
             onClick={() => setIsOpen(true)}
-            className="flex items-center gap-2 px-4 py-2 rounded bg-blue-700 text-white hover:bg-blue-800 transition cursor-pointer"
+            className="flex items-center gap-2 px-4 py-2 rounded bg-[#1767CE] text-white hover:bg-blue-600 transition cursor-pointer"
           >
             <span>Kontakt</span>
             <SendIcon />
