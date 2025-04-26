@@ -9,10 +9,10 @@ export default function Header() {
       </NavLink>
       <div className="flex space-x-8 items-center">
         <NavLink to="/company-ads">
-          <a className="hover:underline">Finn fagfolk</a>
+          <a className="hover:underline">Oppdrag</a>
         </NavLink>
         <NavLink to="/personal-ads">
-          <a className="hover:underline">Finn oppdrag</a>
+          <a className="hover:underline">Fagpersoner</a>
         </NavLink>
         <LoginButton />
       </div>
