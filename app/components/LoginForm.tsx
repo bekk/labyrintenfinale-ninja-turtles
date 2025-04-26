@@ -1,6 +1,5 @@
 import { NavLink } from "react-router";
 import { useState } from "react";
-import type { Route } from "../routes/+types/home";
 import { useNavigate } from "react-router";
 
 export default function Login() {
@@ -10,7 +9,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  async function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email || !password) {
       setError("Vennligst fyll ut alle felt");
