@@ -1,9 +1,27 @@
 import { NavLink } from "react-router";
 import LoginButton from "./ButtonWithIcon/LoginButton";
+import { ButtonWithIcon } from "./ButtonWithIcon/ButtonWithIcon";
+import { useNavigate } from "react-router";
 
 export default function Header() {
+  let loggedIn = false;
+  let className = "";
+
+  if (typeof window !== "undefined") {
+    loggedIn = localStorage.getItem("isLoggedIn") === "true";
+    console.log("loggedIn", loggedIn);
+    const path = window.location.pathname;
+
+    if (path === "/") {
+      className = "absolute";
+    }
+  }
+  let navigate = useNavigate();
+
   return (
-    <div className="flex justify-between items-center p-8">
+    <div
+      className={`flex w-full justify-between items-center p-8 bg-transparent z-10 ${className}`}
+    >
       <NavLink to={"/"}>
         <h1 className="font-bold text-2xl ">RIKSTEAM</h1>
       </NavLink>
@@ -17,7 +35,11 @@ export default function Header() {
         <NavLink to="/equipment-ads">
           <a className="hover:underline">Utstyr</a>
         </NavLink>
-        <LoginButton />
+        {loggedIn ? (
+          <ButtonWithIcon text="Profil" onClick={() => navigate("/profil")} />
+        ) : (
+          <LoginButton />
+        )}
       </div>
     </div>
   );
