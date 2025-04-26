@@ -65,7 +65,7 @@ export default function PersonalAds() {
                         onClick={() => setIsOpen(true)}
                         className="flex items-center gap-2 px-4 py-2 rounded bg-[#1767CE] text-white hover:bg-blue-600 transition cursor-pointer"
                     >
-                        Ny annonse
+                        Registrer tilgjengelighet
                     </button>
                 </div>
             </div>
