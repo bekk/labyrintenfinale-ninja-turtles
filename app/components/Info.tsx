@@ -1,6 +1,6 @@
 export function Info() {
   return (
-    <section className="py-16 px-6">
+    <section className="py-64 px-6">
       <div className="max-w-6xl mx-auto flex flex-col gap-24">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
