@@ -5,7 +5,8 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  ci:
+  frontend:
+    name: Frontend
     runs-on: ubuntu-latest
 
     steps:
@@ -25,4 +26,30 @@ jobs:
         run: npm run lint
 
       - name: 👷🏻‍♂️ Build
+        run: npm run build
+
+  backned:
+    name: Backend
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔍 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐢 Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: 📦 Install dependencies
+        working-directory: ./backend
+        run: npm install
+
+      - name: 📝 Lint
+        working-directory: ./backend
+        run: npm run lint
+
+      - name: 👷🏻‍♂️ Build backend
+        working-directory: ./backend
         run: npm run build
