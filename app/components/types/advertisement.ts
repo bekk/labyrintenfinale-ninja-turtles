@@ -31,7 +31,7 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-07-30",
     userId: "user123",
     isCompany: true,
-    image: "app/components/images/nrk.png",
+    image: "/nrk.png",
   },
   {
     id: "2",
@@ -48,7 +48,7 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-06-25",
     userId: "user456",
     isCompany: true,
-    image: "app/components/images/nrk.png",
+    image: "/nrk.png",
   },
   {
     id: "3",
@@ -65,7 +65,7 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-12-31",
     userId: "user789",
     isCompany: false,
-    image: "app/components/images/johanne.jpg",
+    image: "/johanne.jpg",
   },
   {
     id: "4",
@@ -82,7 +82,7 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-09-15",
     userId: "user321",
     isCompany: true,
-    image: "app/components/images/nrk.png",
+    image: "/nrk.png",
   },
   {
     id: "5",
@@ -99,6 +99,6 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-12-31",
     userId: "user654",
     isCompany: false,
-    image: "app/components/images/henrik.png",
+    image: "/henrik.png",
   },
 ];

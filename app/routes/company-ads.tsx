@@ -40,7 +40,7 @@ export default function CompanyAds() {
       id: Date.now().toString(),
       createdAt,
       isCompany: true,
-      image: "app/components/images/nrk.png",
+      image: "/nrk.png",
       location: {
         latitude: 59.9139,
         longitude: 10.7522,

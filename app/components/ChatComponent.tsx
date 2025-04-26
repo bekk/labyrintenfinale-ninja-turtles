@@ -71,7 +71,7 @@ export default function ChatComponent({ name, image }: ChatProps) {
             </div>
             {msg.sender === "me" ? (
               <img
-                src="app/components/images/henrik.png"
+                src="/henrik.png"
                 alt="Avatar"
                 className="w-8 h-8 rounded-full mb-2 flex items-center"
               />
