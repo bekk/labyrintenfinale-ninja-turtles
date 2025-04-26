@@ -1,11 +1,22 @@
 import { useState } from "react";
 import { ButtonWithIcon } from "~/components/ButtonWithIcon/ButtonWithIcon";
 import EditIcon from "~/icons/EditIcon";
+import LogoutIcon from "~/icons/LogoutIcon";
+import { useNavigate } from "react-router";
 
 export default function Profile() {
+  let navigate = useNavigate();
+
   const [bio, setBio] = useState(
     "Hei! Jeg heter Rikke og jobber i NRK. Jeg brenner for filmproduksjon, kreativt arbeid og å jobbe i team!"
   );
+
+  function logout() {
+    if (typeof window !== "undefined") {
+      window.localStorage.removeItem("isLoggedIn");
+      navigate("/");
+    }
+  }
 
   return (
     <section className="flex flex-col items-center px-6 py-16 min-h-[70vh] bg-deepblue text-offwhite">
@@ -26,6 +37,14 @@ export default function Profile() {
             text="Rediger profil"
             onClick={() => {}}
             icon={<EditIcon />}
+            className="bg-[#1767CE] text-white hover:bg-blue-600"
+          />
+          <ButtonWithIcon
+            text="Logg ut"
+            onClick={() => {
+              logout();
+            }}
+            icon={<LogoutIcon />}
             className="bg-[#1767CE] text-white hover:bg-blue-600"
           />
         </div>
