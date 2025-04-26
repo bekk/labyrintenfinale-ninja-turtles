@@ -40,7 +40,7 @@ export default function PersonalAds() {
       id: Date.now().toString(),
       createdAt,
       isCompany: false,
-      image: "app/components/images/henrik.png",
+      image: "/henrik.png",
       location: {
         latitude: 59.9139,
         longitude: 10.7522,
