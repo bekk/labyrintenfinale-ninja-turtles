@@ -5,15 +5,24 @@ import { useNavigate } from "react-router";
 
 export default function Header() {
   let loggedIn = false;
+  let className = "";
+
   if (typeof window !== "undefined") {
     loggedIn = localStorage.getItem("isLoggedIn") === "true";
     console.log("loggedIn", loggedIn);
+    const path = window.location.pathname;
+
+    if (path === "/") {
+      className = "absolute";
+    }
   }
   let navigate = useNavigate();
 
   return (
-    <div className="flex justify-between items-center p-8">
-      <NavLink to={"/"} className={"flex items-center space-x-2"}>
+    <div
+      className={`flex w-full justify-between items-center p-8 bg-transparent z-10 ${className}`}
+    >
+      <NavLink to={"/"}>
         <h1 className="font-bold text-2xl ">RIKSTEAM</h1>
       </NavLink>
       <div className="flex space-x-8 items-center">
