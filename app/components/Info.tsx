@@ -17,7 +17,7 @@ export function Info() {
           <div className="md:w-1/2 flex justify-center">
             <img
               src="/en.png"
-              alt="Student illustration"
+              alt="Person illustration"
               className="w-64 h-auto"
             />
           </div>
