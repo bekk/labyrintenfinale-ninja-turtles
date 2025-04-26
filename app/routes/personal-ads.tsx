@@ -19,8 +19,8 @@ export default function PersonalAds() {
     lat: number;
     lng: number;
   } | null>(null);
-  const [radius, setRadius] = useState(50); // km
-  const [showMapFilter, setShowMapFilter] = useState(false); // 👈 ny state
+  const [radius, setRadius] = useState(50);
+  const [showMapFilter, setShowMapFilter] = useState(false);
 
   const handleSave = (newAd: {
     title: string;
@@ -82,7 +82,6 @@ export default function PersonalAds() {
         </div>
       </div>
 
-      {/* Kart + Radiusvalg (Skjult bak knapp) */}
       {showMapFilter && (
         <div className="space-y-4">
           <label className="font-semibold">
@@ -123,12 +122,10 @@ export default function PersonalAds() {
         </div>
       )}
 
-      {/* Ny annonse popup */}
       {isOpen && (
         <NewAdForm onSave={handleSave} onCancel={() => setIsOpen(false)} />
       )}
 
-      {/* Annonseliste */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {filteredAds.length > 0 ? (
           filteredAds.map((ad) => <AdCard key={ad.id} ad={ad} />)
