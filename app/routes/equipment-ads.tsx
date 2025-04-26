@@ -3,7 +3,7 @@ import { AdCard } from "~/components/ad-card";
 import { NewAdForm } from "~/components/new-ad";
 import { advertisements as initialAdvertisements } from "~/components/types/advertisement";
 
-export default function CompanyAds() {
+export default function EquipmentAds() {
     const [searchTerm, setSearchTerm] = useState<string>("");
     const [isOpen, setIsOpen] = useState(false);
     const [ads, setAds] = useState(initialAdvertisements);
@@ -25,9 +25,9 @@ export default function CompanyAds() {
             ...newAd,
             id: Date.now().toString(),
             createdAt,
-            isCompany: true,
-            isEquipment: false,
-            image: "app/components/images/nrk.png",
+            isCompany: false,
+            isEquipment: true,
+            image: "app/components/images/drone.png",
         };
 
         setAds([newAdWithDefaults, ...ads]);
@@ -35,7 +35,7 @@ export default function CompanyAds() {
     };
 
     const filteredAds = ads.filter((ad) => {
-        if (!ad.isCompany) return false;
+        if (!ad.isEquipment) return false;
 
         const lowerCaseSearch = searchTerm.toLowerCase();
 
@@ -44,14 +44,14 @@ export default function CompanyAds() {
             ad.title.toLowerCase().includes(lowerCaseSearch) ||
             ad.userId.toLowerCase().includes(lowerCaseSearch) ||
             ad.description.toLowerCase().includes(lowerCaseSearch) ||
-            ad.startDate.toLowerCase().includes(lowerCaseSearch)
+            ad.city.toLowerCase().includes(lowerCaseSearch)
         );
     });
 
     return (
         <div className="p-8 space-y-8">
             <div className="flex justify-between mb-6">
-                <h2>Oppdrag</h2>
+                <h2>Utstyr</h2>
 
                 <div className="flex gap-4">
                     <input
@@ -66,7 +66,7 @@ export default function CompanyAds() {
                         onClick={() => setIsOpen(true)}
                         className="flex items-center gap-2 px-4 py-2 rounded bg-[#1767CE] text-white hover:bg-blue-600 transition cursor-pointer"
                     >
-                        Nytt oppdrag
+                        Registrer tilgjengelighet
                     </button>
                 </div>
             </div>
@@ -84,7 +84,7 @@ export default function CompanyAds() {
                         <AdCard key={ad.id} ad={ad} />
                     ))
                 ) : (
-                    <p>Fant ingen oppdrag som matcher søket.</p>
+                    <p>Fant ingen utstyr som matcher søket.</p>
                 )}
             </div>
         </div>

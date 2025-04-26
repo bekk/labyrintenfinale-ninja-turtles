@@ -9,6 +9,7 @@ export type Advertisement = {
   endDate: string;
   userId: string;
   isCompany: boolean;
+  isEquipment: boolean;
   image: string;
 };
 
@@ -25,6 +26,7 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-07-30",
     userId: "user123",
     isCompany: true,
+    isEquipment: false,
     image: "app/components/images/nrk.png",
   },
   {
@@ -39,6 +41,7 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-06-25",
     userId: "user456",
     isCompany: true,
+    isEquipment: false,
     image: "app/components/images/nrk.png",
   },
   {
@@ -53,6 +56,7 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-12-31",
     userId: "user789",
     isCompany: false,
+    isEquipment: false,
     image: "app/components/images/johanne.jpg",
   },
   {
@@ -67,6 +71,7 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-09-15",
     userId: "user321",
     isCompany: true,
+    isEquipment: false,
     image: "app/components/images/nrk.png",
   },
   {
@@ -81,6 +86,22 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-12-31",
     userId: "user654",
     isCompany: false,
+    isEquipment: false,
     image: "app/components/images/henrik.png",
+  },
+  {
+    id: "6",
+    title: "Drone til leie",
+    description:
+      "Drone som kan brukes til filming av landskap og arrangementer.",
+    city: "Bergen",
+    location: "Nygård",
+    createdAt: "2024-04-02",
+    startDate: "2024-04-15",
+    endDate: "2024-12-31",
+    userId: "DroneElsker",
+    isCompany: false,
+    isEquipment: true,
+    image: "app/components/images/drone.png",
   },
 ];

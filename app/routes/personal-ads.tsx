@@ -26,6 +26,7 @@ export default function PersonalAds() {
             id: Date.now().toString(),
             createdAt,
             isCompany: false,
+            isEquipment: false,
             image: "app/components/images/henrik.png",
         };
 
@@ -34,7 +35,8 @@ export default function PersonalAds() {
     };
 
     const filteredAds = ads.filter((ad) => {
-        if (ad.isCompany) return false;
+        if (ad.isCompany || ad.isEquipment) return false;
+
 
         const lowerCaseSearch = searchTerm.toLowerCase();
 
