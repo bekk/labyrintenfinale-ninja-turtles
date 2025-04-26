@@ -11,8 +11,19 @@ body {
         lightblue: "#1767CE",
         offwhite: "#F8FBFF", */
   @apply bg-[#0A2343] dark:bg-[#0A2343] text-[#F8FBFF] dark:text-[#F8FBFF];
-
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+h1 {
+  @apply text-4xl;
+}
+h2 {
+  @apply text-3xl;
+}
+h3 {
+  @apply text-2xl;
+}
+h4 {
+  @apply text-xl;
 }

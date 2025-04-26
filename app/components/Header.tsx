@@ -8,7 +8,7 @@ export default function Header() {
         <h1 className="font-bold text-2xl ">RIKSTEAM</h1>
       </NavLink>
       <div className="flex space-x-4 items-center">
-        <NavLink to="/adds">
+        <NavLink to="/advertisements">
           <a className="underline ">Annonser</a>
         </NavLink>
         <LoginButton />
