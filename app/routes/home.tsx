@@ -13,9 +13,13 @@ export default function Home() {
   return (
     <>
       <div className="pt-16 p-4 container mx-auto">
-        <p> Velkommen! Denne applikasjonen kan dere bruke for å vise frem ideen deres! </p>
+        <p>
+          {" "}
+          Velkommen! Denne applikasjonen kan dere bruke for å vise frem ideen
+          deres!{" "}
+        </p>
         <NavLink to="/more-info">
-          <a className="text-blue-600 underline hover:text-blue-800">Du kan finne mer info her</a>
+          <a className="text-blue-600 underline hover:text-blue-800">Login</a>
         </NavLink>
       </div>
       <div className="absolute right-10 bottom-10">
