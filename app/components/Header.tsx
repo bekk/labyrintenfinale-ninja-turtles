@@ -7,12 +7,12 @@ export default function Header() {
       <NavLink to={"/"} className={"flex items-center space-x-2"}>
         <h1 className="font-bold text-2xl ">RIKSTEAM</h1>
       </NavLink>
-      <div className="flex space-x-4 items-center">
-        <NavLink to="/advertisements">
-          <a className="underline ">Annonser</a>
+      <div className="flex space-x-8 items-center">
+        <NavLink to="/company-ads">
+          <a className="hover:underline">Oppdrag</a>
         </NavLink>
-        <NavLink to="/chat">
-          <a className="underline ">Chat</a>
+        <NavLink to="/personal-ads">
+          <a className="hover:underline">Fagpersoner</a>
         </NavLink>
         <LoginButton />
       </div>

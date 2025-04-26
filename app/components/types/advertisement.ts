@@ -3,7 +3,10 @@ export type Advertisement = {
   title: string;
   description: string;
   city: string;
-  location: string;
+  location: {
+    latitude: number;
+    longitude: number;
+  };
   createdAt: string;
   startDate: string;
   endDate: string;
@@ -17,9 +20,12 @@ export const advertisements: Advertisement[] = [
     id: "1",
     title: "Skuespillere søkes til dramaserie",
     description:
-      "Vi søker kvinnelige og mannlige skuespillere i alderen 20-40 år for kommende dramaserie på TV2.",
+      "Vi søker kvinnelige og mannlige skuespillere i alderen 20-40 år for kommende dramaserie på NRK.",
     city: "Oslo",
-    location: "Filmparken Jar",
+    location: {
+      latitude: 59.9094,
+      longitude: 10.5194, // Filmparken Jar
+    },
     createdAt: "2024-04-01",
     startDate: "2024-05-15",
     endDate: "2024-07-30",
@@ -29,11 +35,14 @@ export const advertisements: Advertisement[] = [
   },
   {
     id: "2",
-    title: "Statister til Netflix-produksjon",
+    title: "Statister til produksjon",
     description:
-      "Vi trenger 50 statister til opptak av ny Netflix-serie, opptak foregår i Bergen sentrum.",
+      "Vi trenger 50 statister til opptak av ny krim-serie, opptak foregår i Bergen sentrum.",
     city: "Bergen",
-    location: "Bryggen, Bergen sentrum",
+    location: {
+      latitude: 60.3971,
+      longitude: 5.3245, // Bryggen, Bergen
+    },
     createdAt: "2024-03-28",
     startDate: "2024-06-10",
     endDate: "2024-06-25",
@@ -47,7 +56,10 @@ export const advertisements: Advertisement[] = [
     description:
       "Erfaren location manager med gode referanser fra NRK-produksjoner tilgjengelig fra august 2024.",
     city: "Trondheim",
-    location: "Sentrum",
+    location: {
+      latitude: 63.4305,
+      longitude: 10.3951, // Trondheim sentrum
+    },
     createdAt: "2024-04-05",
     startDate: "2024-08-01",
     endDate: "2024-12-31",
@@ -61,7 +73,10 @@ export const advertisements: Advertisement[] = [
     description:
       "Vi søker en produksjonsassistent til dokumentarfilm, oppstart snarest.",
     city: "Stavanger",
-    location: "Filmkraft Rogaland",
+    location: {
+      latitude: 58.969975,
+      longitude: 5.733107, // Filmkraft Rogaland ca.
+    },
     createdAt: "2024-04-10",
     startDate: "2024-05-01",
     endDate: "2024-09-15",
@@ -75,7 +90,10 @@ export const advertisements: Advertisement[] = [
     description:
       "Freelance filmfotograf med erfaring fra reklamefilmer og musikkvideoer tilbyr sine tjenester.",
     city: "Oslo",
-    location: "Majorstuen",
+    location: {
+      latitude: 59.928,
+      longitude: 10.7162, // Majorstuen
+    },
     createdAt: "2024-04-02",
     startDate: "2024-04-15",
     endDate: "2024-12-31",

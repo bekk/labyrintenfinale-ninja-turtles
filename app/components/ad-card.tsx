@@ -31,7 +31,7 @@ export function AdCard({ ad }: { ad: Advertisement }) {
             ) : (
               <p className="text-sm text-gray-600">Navn: {ad.userId}</p>
             )}
-            <p className="text-sm text-gray-600">Sted: {ad.location}</p>
+            <p className="text-sm text-gray-600">Sted: {ad.city}</p>
           </div>
         </div>
 
