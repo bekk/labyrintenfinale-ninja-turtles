@@ -16,7 +16,7 @@ export function Info() {
 
           <div className="md:w-1/2 flex justify-center">
             <img
-              src="/public/en.png"
+              src="/en.png"
               alt="Student illustration"
               className="w-64 h-auto"
             />
@@ -26,7 +26,7 @@ export function Info() {
         <div className="flex flex-col-reverse md:flex-row items-center gap-12">
           <div className="md:w-1/2 flex justify-center">
             <img
-              src="/public/prod.png"
+              src="/prod.png"
               alt="Company illustration"
               className="w-64 h-auto"
             />
