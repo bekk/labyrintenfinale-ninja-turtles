@@ -12,7 +12,7 @@ export default function Profile() {
       <div className="w-full max-w-4xl flex flex-col items-center text-center space-y-8">
         <div className="flex flex-col items-center space-y-4">
           <img
-            src="app/components/images/henrik.png"
+            src="/henrik.png"
             alt="Profilbilde"
             className="w-32 h-32 rounded-full object-cover"
           />
