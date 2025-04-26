@@ -72,15 +72,10 @@ export default function RegisterForm() {
           className="border p-2 rounded w-full"
           placeholder="Bedriftsnavn"
         />
-        <input
-          type="text"
-          className="border p-2 rounded w-full"
-          placeholder="Oppdrag"
-        />
 
         {error && <p className="text-red-500 text-center">{error}</p>}
         <button
-          className="bg-black text-white px-4 py-2 rounded w-full"
+          className="hover:bg-[#0A2343] bg-[#1767CE] text-white px-4 py-2 rounded w-full"
           type="submit"
         >
           Register deg
