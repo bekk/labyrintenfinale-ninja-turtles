@@ -5,6 +5,10 @@ export function meta({}: Route.MetaArgs) {
   return [{ title: "RIKSTEAM" }];
 }
 
-export default function Home() {
-  return <></>;
+export default function Login() {
+  return (
+    <>
+      <Header />
+    </>
+  );
 }

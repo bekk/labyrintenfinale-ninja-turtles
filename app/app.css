@@ -10,7 +10,7 @@ body {
   /* deepblue: "#0A2343",
         lightblue: "#1767CE",
         offwhite: "#F8FBFF", */
-  @apply bg-[#0A2343] dark:bg-[#0A2343] text-[##F8FBFF];
+  @apply bg-[#0A2343] dark:bg-[#0A2343] text-[#F8FBFF] dark:text-[#F8FBFF];
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
