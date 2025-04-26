@@ -12,6 +12,7 @@ export type Advertisement = {
   endDate: string;
   userId: string;
   isCompany: boolean;
+  isEquipment: boolean;
   image: string;
 };
 
@@ -31,6 +32,7 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-07-30",
     userId: "user123",
     isCompany: true,
+    isEquipment: false,
     image: "/nrk.png",
   },
   {
@@ -48,6 +50,7 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-06-25",
     userId: "user456",
     isCompany: true,
+    isEquipment: false,
     image: "/nrk.png",
   },
   {
@@ -65,6 +68,7 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-12-31",
     userId: "user789",
     isCompany: false,
+    isEquipment: false,
     image: "/johanne.jpg",
   },
   {
@@ -82,6 +86,7 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-09-15",
     userId: "user321",
     isCompany: true,
+    isEquipment: false,
     image: "/nrk.png",
   },
   {
@@ -99,6 +104,26 @@ export const advertisements: Advertisement[] = [
     endDate: "2024-12-31",
     userId: "user654",
     isCompany: false,
+    isEquipment: false,
     image: "/henrik.png",
+  },
+  {
+    id: "6",
+    title: "Drone til leie",
+    description:
+      "Drone som kan brukes til filming av landskap og arrangementer.",
+    city: "Oslo",
+    location: {
+      latitude: 59.928,
+      longitude: 10.7162, // Majorstuen
+    },
+    createdAt: "2024-04-02",
+    startDate: "2024-04-15",
+    endDate: "2024-12-31",
+    userId: "DroneElsker",
+    isCompany: false,
+    isEquipment: true,
+
+    image: "/drone.png",
   },
 ];

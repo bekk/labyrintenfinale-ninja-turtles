@@ -32,6 +32,9 @@ export default function Header() {
         <NavLink to="/personal-ads">
           <a className="hover:underline">Fagpersoner</a>
         </NavLink>
+        <NavLink to="/equipment-ads">
+          <a className="hover:underline">Utstyr</a>
+        </NavLink>
         {loggedIn ? (
           <ButtonWithIcon text="Profil" onClick={() => navigate("/profil")} />
         ) : (

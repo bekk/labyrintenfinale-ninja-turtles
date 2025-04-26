@@ -40,6 +40,7 @@ export default function PersonalAds() {
       id: Date.now().toString(),
       createdAt,
       isCompany: false,
+      isEquipment: false,
       image: "/henrik.png",
       location: {
         latitude: 59.9139,
@@ -47,10 +48,13 @@ export default function PersonalAds() {
       },
     };
 
+    const filteredAds = ads.filter((ad) => {
+      if (ad.isCompany || ad.isEquipment) return false;
+    });
+
     setAds([newAdWithDefaults, ...ads]);
     setIsOpen(false);
   };
-
   const filteredAds = filterAds(ads, searchTerm, filterCenter, radius, false);
 
   return (
