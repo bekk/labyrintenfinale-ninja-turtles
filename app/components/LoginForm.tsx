@@ -23,6 +23,7 @@ export default function Login() {
 
     if (email === "test@uib.no" && password === "test") {
       setError("");
+      localStorage.setItem("isLoggedIn", "true");
       navigate("/");
     } else {
       setError("Feil e-post eller passord");
