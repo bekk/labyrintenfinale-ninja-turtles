@@ -16,6 +16,10 @@ export type Advertisement = {
   image: string;
 };
 
+export function getAdFromId(id: string): Advertisement | undefined {
+  return advertisements.find((ad) => ad.id === id);
+}
+
 export const advertisements: Advertisement[] = [
   {
     id: "1",
