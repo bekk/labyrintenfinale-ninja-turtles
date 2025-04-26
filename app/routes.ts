@@ -10,6 +10,7 @@ export default [
   route("/register", "routes/register.tsx"),
   route("/register/company", "routes/register/company.tsx"),
   route("/register/personal", "routes/register/personal.tsx"),
+  route("/profil", "routes/profile.tsx"),
   route("/company-ads", "routes/company-ads.tsx"),
   route("/personal-ads", "routes/personal-ads.tsx"),
   route("/chat", "routes/chat.tsx"),
