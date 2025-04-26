@@ -3,10 +3,10 @@ const backgroundVideo = "/tettstedet.mp4";
 export function HeroSection() {
   return (
     <section
-      className="h-[80vh] w-full flex items-center justify-center text-white text-center relative"
+      className="h-[104.7vh] w-full flex items-center justify-center text-white text-center relative"
     >
       <video
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-225 object-cover"
         src={backgroundVideo}
         autoPlay
         loop

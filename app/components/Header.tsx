@@ -3,7 +3,7 @@ import LoginButton from "./ButtonWithIcon/LoginButton";
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center p-8">
+    <div className="flex w-full justify-between items-center p-8 absolute bg-transparent z-10">
       <NavLink to={"/"}>
         <h1 className="font-bold text-2xl ">RIKSTEAM</h1>
       </NavLink>
