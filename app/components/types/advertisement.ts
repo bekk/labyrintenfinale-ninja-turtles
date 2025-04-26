@@ -17,7 +17,7 @@ export const advertisements: Advertisement[] = [
     id: "1",
     title: "Skuespillere søkes til dramaserie",
     description:
-      "Vi søker kvinnelige og mannlige skuespillere i alderen 20-40 år for kommende dramaserie på TV2.",
+      "Vi søker kvinnelige og mannlige skuespillere i alderen 20-40 år for kommende dramaserie på NRK.",
     city: "Oslo",
     location: "Filmparken Jar",
     createdAt: "2024-04-01",
@@ -29,9 +29,9 @@ export const advertisements: Advertisement[] = [
   },
   {
     id: "2",
-    title: "Statister til Netflix-produksjon",
+    title: "Statister til produksjon",
     description:
-      "Vi trenger 50 statister til opptak av ny Netflix-serie, opptak foregår i Bergen sentrum.",
+      "Vi trenger 50 statister til opptak av ny krim-serie, opptak foregår i Bergen sentrum.",
     city: "Bergen",
     location: "Bryggen, Bergen sentrum",
     createdAt: "2024-03-28",
