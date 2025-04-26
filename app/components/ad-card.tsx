@@ -14,7 +14,7 @@ export function AdCard({ ad }: { ad: Advertisement }) {
   };
 
   return (
-    <>
+    <a href={`/ads/${ad.id}`}>
       <div className="bg-white text-black p-6 rounded-lg shadow-md flex flex-col justify-between h-full">
         <div className="flex space-x-4 mb-4">
           <img
@@ -49,6 +49,6 @@ export function AdCard({ ad }: { ad: Advertisement }) {
       </div>
 
       {isOpen ? <ChatComponent name={ad.userId} image={ad.image} /> : ""}
-    </>
+    </a>
   );
 }
