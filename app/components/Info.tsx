@@ -38,11 +38,11 @@ export function Info() {
               Vår plattform tilbyr en unik mulighet for bedrifter å finne
               passende fagfolk å samarbeide med. Med våre tjenester kan
               bedrifter identifisere og nå ut til relevante fagfolk som matcher
-              deres behov. Enten det er for å finne lydtekniker, fotograf eller
-              vanngutt, gir vår plattform en effektiv måte for bedrifter å koble
+              deres behov. Enten det er for å finne lydtekniker, fotograf,
+              produsent eller noe annet, gir vår plattform en effektiv måte for bedrifter å koble
               seg sammen med talentfulle enkeltpersoner som kan bidra til å
               realisere deres visjoner. Samtidig som bedrifter kan unngå å fly
-              inn store produksjonsteam og kan bruke lokale ressurser.
+              inn store produksjonsteam og heller bruke lokale ressurser.
             </p>
           </div>
         </div>
