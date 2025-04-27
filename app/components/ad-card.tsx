@@ -4,18 +4,9 @@ import ChatComponent from "./ChatComponent";
 import type { Advertisement } from "./types/advertisement";
 
 export function AdCard({ ad }: { ad: Advertisement }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [message, setMessage] = useState("");
-
-  const handleSend = () => {
-    console.log("Melding sendt:", message);
-    setIsOpen(false);
-    setMessage("");
-  };
-
   return (
     <a href={`/ads/${ad.id}`}>
-      <div className="bg-white text-black p-6 rounded-lg shadow-md flex flex-col justify-between h-full">
+      <div className="bg-white text-black p-6 rounded-lg flex flex-col justify-between h-full hover:shadow-lg shadow-gray-200">
         <div className="flex space-x-4 mb-4">
           <img
             src={ad.image}
@@ -36,19 +27,7 @@ export function AdCard({ ad }: { ad: Advertisement }) {
         </div>
 
         <p className="text-gray-700 mb-4">{ad.description}</p>
-
-        <div className="flex justify-end mt-auto">
-          <button
-            onClick={() => setIsOpen(true)}
-            className="flex items-center gap-2 px-4 py-2 rounded bg-[#1767CE] text-white hover:bg-blue-600 transition cursor-pointer"
-          >
-            <span>Kontakt</span>
-            <SendIcon />
-          </button>
-        </div>
       </div>
-
-      {isOpen ? <ChatComponent name={ad.userId} image={ad.image} /> : ""}
     </a>
   );
 }

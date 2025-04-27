@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useParams, Link } from "react-router";
 import { getAdFromId, advertisements } from "~/components/types/advertisement";
 import { getUserFromId } from "~/components/types/user";
+import SendIcon from "~/icons/SendIcon";
+import ChatComponent from "~/components/ChatComponent";
 
 export default function Ad() {
   const { id } = useParams();
@@ -10,6 +12,7 @@ export default function Ad() {
   const user = getUserFromId(userId || "");
 
   const [view, setView] = useState<"profile" | "ads">("profile");
+  const [isOpen, setIsOpen] = useState(false);
 
   if (!ad || !user) {
     return <div className="p-6 text-center">Fant ikke annonsen.</div>;
@@ -21,7 +24,6 @@ export default function Ad() {
 
   return (
     <div className="bg-white text-black p-6 rounded-lg shadow-md max-w-3xl mx-auto my-8 space-y-12">
-      {/* Velger mellom Profil og Annonser */}
       <div className="flex justify-center mb-8 space-x-4">
         <button
           onClick={() => setView("profile")}
@@ -47,7 +49,6 @@ export default function Ad() {
         )}
       </div>
 
-      {/* Innhold basert på valgt knapp */}
       {view === "profile" && (
         <section>
           <div className="flex items-center space-x-4 mb-6">
@@ -122,7 +123,6 @@ export default function Ad() {
         </section>
       )}
 
-      {/* Hovedannonsen uansett */}
       <section>
         <hr className="my-8" />
         <h2 className="text-2xl font-bold mb-4">{ad.title}</h2>
@@ -150,6 +150,27 @@ export default function Ad() {
 
         <p className="text-gray-700">{ad.description}</p>
       </section>
+      <div>
+        <h3 className="text-lg font-semibold mb-4">Kontakt</h3>
+        <p className="text-gray-700 mb-4">
+          Ta kontakt med {user.name} for mer informasjon.
+        </p>
+        <button
+          className="flex items-center gap-2 px-4 py-2 rounded bg-[#1767CE] text-white hover:bg-blue-600 transition cursor-pointer"
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+        >
+          {isOpen ? (
+            "Lukk chat"
+          ) : (
+            <p className="flex items-center gap-2">
+              <SendIcon /> Send melding
+            </p>
+          )}
+        </button>
+      </div>
+      {isOpen ? <ChatComponent name={ad.userId} image={ad.image} /> : null}
     </div>
   );
 }
