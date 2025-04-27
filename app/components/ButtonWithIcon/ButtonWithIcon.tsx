@@ -15,7 +15,7 @@ export function ButtonWithIcon({
 }: Props) {
   return (
     <button
-      className={`font-bold py-2 px-3 rounded inline-flex items-center cursor-pointer gap-2 ${
+      className={`font-medium py-2 px-3 rounded inline-flex items-center cursor-pointer gap-2 ${
         className ?? ""
       }`}
       onClick={onClick}
