@@ -65,7 +65,7 @@ export default function CompanyAds() {
   }
 
   return (
-    <div className="p-8 space-y-8">
+    <div className="p-8 space-y-8 min-h-screen">
       <div className="flex justify-between flex-wrap gap-4 mb-6">
         <h2 className="text-2xl font-bold">Oppdrag</h2>
 

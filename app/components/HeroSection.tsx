@@ -22,7 +22,7 @@ export function HeroSection() {
         <p className="mt-6 text-lg md:text-2xl">
           Sammen bygger vi fremtiden for lokal filmproduksjon
         </p>
-        <div className="mt-4">{loggedIn ? null : <RegisterButton />}</div>
+        <div>{loggedIn ? null : <RegisterButton />}</div>
       </div>
     </section>
   );
