@@ -21,7 +21,7 @@ export default function Login() {
       return;
     }
 
-    if (email === "test@uib.no" && password === "test") {
+    if (email === "rikke@gmail.com" && password === "test") {
       setError("");
       localStorage.setItem("isLoggedIn", "true");
       localStorage.setItem("isCompany", "false");
@@ -30,7 +30,7 @@ export default function Login() {
       setError("Feil e-post eller passord");
     }
 
-    if (email === "company@uib.no" && password === "test") {
+    if (email === "company@gmail.com" && password === "test") {
       setError("");
       localStorage.setItem("isLoggedIn", "true");
       localStorage.setItem("isCompany", "true");
