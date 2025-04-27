@@ -12,7 +12,7 @@ export default function LoginButton() {
 
   return (
     <ButtonWithIcon
-      text="Login"
+      text="Logg inn"
       onClick={() => navigate("/login")}
       icon={<ProfileIcon />}
       className="bg-[#1767CE] text-white hover:bg-blue-600"

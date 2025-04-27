@@ -5,7 +5,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-12">
           <div className="flex flex-col gap-2">
             <h2 className="text-xl font-bold">RIKSTEAM</h2>
-            <p>riksteam@ninjaturtles.com</p>
+            <p>riksteam@labyrinten.com</p>
             <p>+47 123 45 678</p>
             <p>
               <a
@@ -69,8 +69,8 @@ export function Footer() {
         </div>
 
         <div className="text-xs">
-          © {new Date().getFullYear()} RIKSTEAM. Laget av Ninja Turtles 🐢
-          Mille, Karolina, Johanne og Henrik.
+          © {new Date().getFullYear()} RIKSTEAM. Laget av Labyrinten Consulting
+          AS
         </div>
       </div>
     </footer>

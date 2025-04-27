@@ -3,6 +3,7 @@ import { ButtonWithIcon } from "~/components/ButtonWithIcon/ButtonWithIcon";
 import EditIcon from "~/icons/EditIcon";
 import LogoutIcon from "~/icons/LogoutIcon";
 import { useNavigate } from "react-router";
+import ProfileAdsCard from "~/components/ProfileAdsCard";
 
 export default function Profile() {
   let navigate = useNavigate();
@@ -53,28 +54,32 @@ export default function Profile() {
           <h2 className="text-2xl font-bold">Om meg</h2>
           <p>{bio}</p>
         </div>
-
-        <div className="w-full bg-[#D9E9FF] text-[#0A2343] p-8 rounded-xl shadow-md space-y-6">
-          <h2 className="text-2xl font-bold">Mine annonser</h2>
-
-          <div className="border p-4 rounded-md hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold">
-              Søker lydtekniker til kortfilm
-            </h3>
-            <p className="text-sm mt-2 text-[#0A2343]/80">
-              Vi trenger en lydtekniker for et spennende prosjekt i Bergen i
-              juni. Ta kontakt!
-            </p>
-          </div>
-
-          <div className="border p-4 rounded-md hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold">
-              Søker fotograf til musikkvideo
-            </h3>
-            <p className="text-sm mt-2 text-[#0A2343]/80">
-              Vi lager en kreativ musikkvideo og trenger en engasjert fotograf.
-            </p>
-          </div>
+        <div className="flex flex-row  gap-4 p-8 rounded-xl shadow-md">
+          <ProfileAdsCard
+            title="Mine annonser"
+            ads={[
+              {
+                title: "Søker lydtekniker til kortfilm",
+                description:
+                  "Vi trenger en lydtekniker for et spennende prosjekt i Bergen i juni. Ta kontakt!",
+              },
+              {
+                title: "Søker fotograf til musikkvideo",
+                description:
+                  "Vi lager en kreativ musikkvideo og trenger en engasjert fotograf.",
+              },
+            ]}
+          />
+          <ProfileAdsCard
+            title="Mine utstyrte annonser"
+            ads={[
+              {
+                title: "Tilgjengelig utstyr for leie",
+                description:
+                  "Jeg har tilgjengelig kamera, lys og lydutstyr for leie. Ta kontakt for mer info.",
+              },
+            ]}
+          />
         </div>
       </div>
     </section>

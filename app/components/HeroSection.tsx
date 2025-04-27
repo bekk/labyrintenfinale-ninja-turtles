@@ -1,6 +1,10 @@
+import LoginButton from "~/components/ButtonWithIcon/LoginButton";
 const backgroundVideo = "/tettstedet.mp4";
 
 export function HeroSection() {
+  const loggedIn =
+    typeof window !== "undefined" &&
+    localStorage.getItem("isLoggedIn") === "true";
   return (
     <section className="h-[104.7vh] w-full flex items-center justify-center text-white text-center relative">
       <video
@@ -18,6 +22,7 @@ export function HeroSection() {
         <p className="mt-4 text-lg md:text-2xl">
           Sammen bygger vi fremtiden av lokal filmproduksjon
         </p>
+        {loggedIn ? null : <LoginButton />}
       </div>
     </section>
   );

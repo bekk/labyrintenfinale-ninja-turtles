@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <div
-      className={`flex w-full justify-between items-center p-8 bg-transparent z-10 ${className}`}
+      className={`flex w-full justify-between items-center p-8 bg-transparent z-10 text-xl font-medium ${className}`}
     >
       <NavLink to={"/"}>
         <h1 className="font-bold text-2xl ">RIKSTEAM</h1>
