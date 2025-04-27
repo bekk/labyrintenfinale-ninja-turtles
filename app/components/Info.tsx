@@ -35,15 +35,11 @@ export function Info() {
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-4">For produksjonsteam</h2>
             <p>
-              Vår plattform tilbyr en unik mulighet for bedrifter å finne
-              passende fagfolk å samarbeide med. Med våre tjenester kan
-              bedrifter identifisere og nå ut til relevante fagfolk som matcher
-              deres behov. Enten det er for å finne lydtekniker, fotograf,
-              produsent eller noe annet, gir vår plattform en effektiv måte for
-              bedrifter å koble seg sammen med talentfulle enkeltpersoner som
-              kan bidra til å realisere deres visjoner. Samtidig som bedrifter
-              kan unngå å fly inn store produksjonsteam og heller bruke lokale
-              ressurser.
+              Vår plattform gjør det enkelt for bedrifter å finne relevante
+              fagfolk, som lydteknikere, fotografer og produsenter, lokalt.
+              Bedrifter kan effektivt koble seg med talentfulle enkeltpersoner
+              som hjelper dem å realisere sine visjoner, uten behov for å fly
+              inn store produksjonsteam.
             </p>
           </div>
         </div>
