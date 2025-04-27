@@ -20,7 +20,7 @@ export function HeroSection() {
       <div className="relative z-10 p-8">
         <p className="text-6xl md:text-7xl font-bold">Velkommen til RIKSTEAM</p>
         <p className="mt-6 text-lg md:text-2xl">
-          Sammen bygger vi fremtiden av lokal filmproduksjon
+          Sammen bygger vi fremtiden for lokal filmproduksjon
         </p>
         <div className="mt-4">{loggedIn ? null : <RegisterButton />}</div>
       </div>
