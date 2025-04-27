@@ -12,9 +12,9 @@ export default function RegisterButton() {
 
   return (
     <ButtonWithIcon
-      text="Lag bruker &#8250;"
+      text="Registrer deg her &#8250;"
       onClick={() => navigate("/register")}
-      className="bg-black text-white opacity-60 hover:opacity-100 py-6 px-9 text-xl"
+      className="text-white opacity-60 hover:opacity-100 text-lg "
     />
   );
 }
