@@ -52,10 +52,10 @@ export default function PersonalAds() {
     setIsOpen(false);
   };
 
-  const filteredAds1 = ads.filter((ad) => !(ad.isCompany || ad.isEquipment));
+  const personalAds = ads.filter((ad) => !(ad.isCompany || ad.isEquipment));
 
   const filteredAds = filterAds(
-    filteredAds1,
+    personalAds,
     searchTerm,
     filterCenter,
     radius,
