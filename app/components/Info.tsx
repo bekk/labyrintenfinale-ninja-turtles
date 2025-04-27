@@ -4,7 +4,7 @@ export function Info() {
       <div className="max-w-6xl mx-auto flex flex-col gap-24">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
-            <h2 className="text-3xl font-bold mb-4">For enkelpersoner</h2>
+            <h2 className="text-3xl font-bold mb-4">For enkeltpersoner</h2>
             <p>
               Vi tilbyr en innovativ plattform som forenkler prosessen med å
               finne samarbeidsmuligheter med produksjoner som trenger din
@@ -32,18 +32,37 @@ export function Info() {
             />
           </div>
 
-          <div className="md:w-1/2 ">
+          <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-4">For produksjonsteam</h2>
             <p>
               Vår plattform tilbyr en unik mulighet for bedrifter å finne
               passende fagfolk å samarbeide med. Med våre tjenester kan
               bedrifter identifisere og nå ut til relevante fagfolk som matcher
               deres behov. Enten det er for å finne lydtekniker, fotograf,
-              produsent eller noe annet, gir vår plattform en effektiv måte for bedrifter å koble
-              seg sammen med talentfulle enkeltpersoner som kan bidra til å
-              realisere deres visjoner. Samtidig som bedrifter kan unngå å fly
-              inn store produksjonsteam og heller bruke lokale ressurser.
+              produsent eller noe annet, gir vår plattform en effektiv måte for
+              bedrifter å koble seg sammen med talentfulle enkeltpersoner som
+              kan bidra til å realisere deres visjoner. Samtidig som bedrifter
+              kan unngå å fly inn store produksjonsteam og heller bruke lokale
+              ressurser.
             </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="md:w-1/2">
+            <h2 className="text-3xl font-bold mb-4">Fokus på bærekraft</h2>
+            <p>
+              Vi bidrar til å redusere klimagassutslipp, ved å koble
+              pruduksjoner opp med lokale og gode fagfolk.
+            </p>
+          </div>
+
+          <div className="md:w-1/2 flex justify-center">
+            <img
+              src="/baerekraft.png"
+              alt="Bærekraft illustration"
+              className="w-64 h-auto"
+            />
           </div>
         </div>
       </div>

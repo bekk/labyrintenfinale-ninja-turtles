@@ -72,7 +72,7 @@ export default function PersonalAds() {
   }
 
   return (
-    <div className="p-8 space-y-8">
+    <div className="p-8 space-y-8 min-h-screen">
       <div className="flex justify-between flex-wrap mb-6">
         <h2 className="text-2xl font-bold">Fagpersoner</h2>
 
