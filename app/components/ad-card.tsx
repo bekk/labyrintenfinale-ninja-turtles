@@ -6,7 +6,7 @@ import type { Advertisement } from "./types/advertisement";
 export function AdCard({ ad }: { ad: Advertisement }) {
   return (
     <a href={`/ads/${ad.id}`}>
-      <div className="bg-white text-black p-6 rounded-lg flex flex-col justify-between h-full hover:shadow-lg shadow-gray-200">
+      <div className="bg-white text-black p-6 rounded-lg flex flex-col justify-between h-full hover:scale-101">
         <div className="flex space-x-4 mb-4">
           <img
             src={ad.image}
