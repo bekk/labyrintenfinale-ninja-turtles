@@ -9,7 +9,7 @@ export default function Profile() {
   let navigate = useNavigate();
 
   const [bio, setBio] = useState(
-    "Hei! Jeg heter Rikke og jobber i NRK. Jeg brenner for filmproduksjon, kreativt arbeid og å jobbe i team!"
+    "Hei! Jeg heter Rikke. Jeg brenner for filmproduksjon, kreativt arbeid og å jobbe i team!"
   );
 
   function logout() {
@@ -24,15 +24,14 @@ export default function Profile() {
       <div className="w-full max-w-4xl flex flex-col items-center text-center space-y-8">
         <div className="flex flex-col items-center space-y-4">
           <img
-            src="/henrik.png"
+            src="/happy_rikke.jpg"
             alt="Profilbilde"
             className="w-32 h-32 rounded-full object-cover"
           />
           <p className="text-3xl font-bold">Hei, Rikke!</p>
           <div className="space-y-1 text-sm">
-            <p>E-post: Rikke@kompaniet.no</p>
+            <p>E-post: rikke@gmail.com</p>
             <p>Telefon: 12345678</p>
-            <p>Bedrift: NRK</p>
           </div>
           <ButtonWithIcon
             text="Rediger profil"
@@ -59,14 +58,14 @@ export default function Profile() {
             title="Mine annonser"
             ads={[
               {
-                title: "Søker lydtekniker til kortfilm",
+                title: "Film fotograf tilgjengelig",
                 description:
-                  "Vi trenger en lydtekniker for et spennende prosjekt i Bergen i juni. Ta kontakt!",
+                  "Hei! Jeg heter Rikke. Jeg brenner for filmproduksjon, kreativt arbeid og å jobbe i team!",
               },
               {
-                title: "Søker fotograf til musikkvideo",
+                title: "Redigerer tilgjengelig",
                 description:
-                  "Vi lager en kreativ musikkvideo og trenger en engasjert fotograf.",
+                  "Hei! Jeg heter Rikke. Jeg brenner for redigering, kreativt arbeid og å jobbe i team!",
               },
             ]}
           />

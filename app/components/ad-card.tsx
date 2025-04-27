@@ -1,6 +1,3 @@
-import { useState } from "react";
-import SendIcon from "~/icons/SendIcon";
-import ChatComponent from "./ChatComponent";
 import type { Advertisement } from "./types/advertisement";
 
 export function AdCard({ ad }: { ad: Advertisement }) {
