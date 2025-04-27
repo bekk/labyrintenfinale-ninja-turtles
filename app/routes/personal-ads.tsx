@@ -48,14 +48,19 @@ export default function PersonalAds() {
       },
     };
 
-    const filteredAds = ads.filter((ad) => {
-      if (ad.isCompany || ad.isEquipment) return false;
-    });
-
     setAds([newAdWithDefaults, ...ads]);
     setIsOpen(false);
   };
-  const filteredAds = filterAds(ads, searchTerm, filterCenter, radius, false);
+
+  const filteredAds1 = ads.filter((ad) => !(ad.isCompany || ad.isEquipment));
+
+  const filteredAds = filterAds(
+    filteredAds1,
+    searchTerm,
+    filterCenter,
+    radius,
+    false
+  );
 
   return (
     <div className="p-8 space-y-8">
