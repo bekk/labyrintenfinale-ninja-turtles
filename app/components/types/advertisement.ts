@@ -23,13 +23,13 @@ export function getAdFromId(id: string): Advertisement | undefined {
 export const advertisements: Advertisement[] = [
   {
     id: "1",
-    title: "Skuespillere søkes til dramaserie",
+    title: "Filmfotograf med drone søkes",
     description:
-      "Vi søker kvinnelige og mannlige skuespillere i alderen 20-40 år for kommende dramaserie på NRK.",
-    city: "Oslo",
+      "Vi søker en erfaren filmfotograf med dronekompetanse til opptak av naturdokumentar.",
+    city: "Lofoten",
     location: {
-      latitude: 59.9094,
-      longitude: 10.5194, // Filmparken Jar
+      latitude: 68.166356,
+      longitude: 13.658062,
     },
     createdAt: "2024-04-01",
     startDate: "2024-05-15",
@@ -47,7 +47,7 @@ export const advertisements: Advertisement[] = [
     city: "Bergen",
     location: {
       latitude: 60.3971,
-      longitude: 5.3245, // Bryggen, Bergen
+      longitude: 5.3245,
     },
     createdAt: "2024-03-28",
     startDate: "2024-06-10",
@@ -59,13 +59,13 @@ export const advertisements: Advertisement[] = [
   },
   {
     id: "3",
-    title: "Location Manager ledig for nye prosjekter",
+    title: "Dronefotograf tilgjengelig",
     description:
       "Erfaren location manager med gode referanser fra NRK-produksjoner tilgjengelig fra august 2024.",
-    city: "Trondheim",
+    city: "Lofoten",
     location: {
-      latitude: 63.4305,
-      longitude: 10.3951, // Trondheim sentrum
+      latitude: 68.166356,
+      longitude: 13.658062,
     },
     createdAt: "2024-04-05",
     startDate: "2024-08-01",
@@ -77,13 +77,13 @@ export const advertisements: Advertisement[] = [
   },
   {
     id: "4",
-    title: "Produksjonsassistent ønskes",
+    title: "Lydtekniker søkes umiddelbart",
     description:
-      "Vi søker en produksjonsassistent til dokumentarfilm, oppstart snarest.",
+      "Vi søker en erfaren lydtekniker til opptak av dokumentarfilm i Stavanger, da vi har fått en avbestilling.",
     city: "Stavanger",
     location: {
       latitude: 58.969975,
-      longitude: 5.733107, // Filmkraft Rogaland ca.
+      longitude: 5.733107,
     },
     createdAt: "2024-04-10",
     startDate: "2024-05-01",

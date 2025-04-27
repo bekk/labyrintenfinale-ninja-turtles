@@ -62,6 +62,15 @@ export default function PersonalAds() {
     false
   );
 
+  let loggedIn = false;
+  let isCompany = false;
+
+  if (typeof window !== "undefined") {
+    loggedIn = localStorage.getItem("isLoggedIn") === "true";
+    isCompany = localStorage.getItem("isCompany") === "true";
+    console.log("loggedIn", loggedIn);
+  }
+
   return (
     <div className="p-8 space-y-8">
       <div className="flex justify-between flex-wrap mb-6">
@@ -76,12 +85,14 @@ export default function PersonalAds() {
             onChange={(e) => setSearchTerm(e.target.value)}
             className="p-2 border rounded"
           />
-          <button
-            onClick={() => setIsOpen(true)}
-            className="flex items-center gap-2 px-4 py-2 rounded h-full bg-[#1767CE] text-white hover:bg-blue-600 transition cursor-pointer"
-          >
-            Registrer tilgjengelighet
-          </button>
+          {loggedIn && !isCompany && (
+            <button
+              onClick={() => setIsOpen(true)}
+              className="flex items-center gap-2 px-4 py-2 rounded h-full bg-[#1767CE] text-white hover:bg-blue-600 transition cursor-pointer"
+            >
+              Registrer tilgjengelighet
+            </button>
+          )}
           <button
             onClick={() => setShowMapFilter((prev) => !prev)}
             className="flex items-center gap-2 px-4 py-2 rounded h-full bg-[#1767CE] transition cursor-pointer"
