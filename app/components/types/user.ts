@@ -56,4 +56,32 @@ export const users: User[] = [
       "Freelance filmfotograf innen reklame, musikkvideo og kortfilm.",
     equipment: ["RED Komodo 6K", "Sony A7S III", "Lysutstyr", "Droner"],
   },
+  {
+    id: "DroneElsker",
+    name: "Andreas Dronemann",
+    isCompany: false,
+    city: "Oslo",
+    profileImage: "/drone.png",
+    experience: "Dronepilot med spesialisering på natur- og byfilmopptak.",
+    equipment: ["DJI Mavic 3 Cine", "DJI Inspire 2"],
+  },
+  {
+    id: "jegSelgerUtstyr",
+    name: "Utstyrsbasen",
+    isCompany: true,
+    city: "Drammen",
+    profileImage: "/utstyr.png",
+    experience:
+      "Tilbyr utleie og salg av brukt filmutstyr til lave priser for bærekraftige produksjoner.",
+    equipment: ["Kameraer", "Lysutstyr", "Griputstyr", "Audio-utstyr"],
+  },
+  {
+    id: "kameraElsker",
+    name: "Maja K.",
+    isCompany: false,
+    city: "Bergen",
+    profileImage: "/kamera.png",
+    experience: "Freelance kameraoperatør med fokus på dokumentar og kortfilm.",
+    equipment: ["Blackmagic Pocket 6K", "Sigma Cine Lenses", "Zhiyun Gimbal"],
+  },
 ];
