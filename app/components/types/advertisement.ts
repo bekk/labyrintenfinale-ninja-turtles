@@ -146,13 +146,13 @@ export const advertisements: Advertisement[] = [
     userId: "user907",
     isCompany: false,
     isEquipment: false,
-    image: "/henrik.png",
+    image: "/en.png",
   },
   {
     id: "8",
-    title: "Elbil til leie for filmcrew",
+    title: "Kamera og gimbal til leie for filmcrew",
     description:
-      "Tesla Model Y tilgjengelig for transport av crew og utstyr under opptak i Oslo-området.",
+      "Kamera og gimbal tilgjengelig for leie til filmproduksjoner. Utstyret er i topp stand og klar for bruk.",
     city: "Oslo",
     location: {
       latitude: 59.9139,
@@ -161,32 +161,14 @@ export const advertisements: Advertisement[] = [
     createdAt: "2024-04-22",
     startDate: "2024-05-01",
     endDate: "2024-08-31",
-    userId: "greenrides",
+    userId: "kameraElsker",
     isCompany: false,
     isEquipment: true,
-    image: "/henrik.png",
-  },
-  {
-    id: "9",
-    title: "Bærekraftig catering til filmproduksjon",
-    description:
-      "Vegetarisk cateringfirma tilbyr miljøvennlig matlevering til film- og TV-innspillinger i Vestfold.",
-    city: "Tønsberg",
-    location: {
-      latitude: 59.2675,
-      longitude: 10.407,
-    },
-    createdAt: "2024-04-23",
-    startDate: "2024-05-10",
-    endDate: "2024-12-01",
-    userId: "greenbites",
-    isCompany: true,
-    isEquipment: false,
-    image: "/henrik.png",
+    image: "/camera.png",
   },
   {
     id: "10",
-    title: "Grip tilgjengelig i Kristiansand-området",
+    title: "Norges beste lydtekniker",
     description:
       "Grip med eget utstyr tilbyr tjenester til små og mellomstore produksjoner. Miljøfokusert transport og rigging.",
     city: "Kristiansand",
@@ -200,13 +182,13 @@ export const advertisements: Advertisement[] = [
     userId: "user858",
     isCompany: false,
     isEquipment: false,
-    image: "/henrik.png",
+    image: "/rikke.png",
   },
   {
     id: "11",
-    title: "Gjenbrukbare scenografimaterialer til leie",
+    title: "Høyttaler til leie",
     description:
-      "Stort lager av gjenbrukbare kulisser og rekvisitter tilgjengelig for bærekraftige produksjoner.",
+      "Høyttaler til leie for filmproduksjoner og arrangementer. Utstyret er i topp stand og klar for bruk.",
     city: "Oslo",
     location: {
       latitude: 59.928,
@@ -215,9 +197,9 @@ export const advertisements: Advertisement[] = [
     createdAt: "2024-04-24",
     startDate: "2024-05-01",
     endDate: "2024-12-31",
-    userId: "scenegjenbruk",
-    isCompany: true,
+    userId: "jegSelgerUtstyr",
+    isCompany: false,
     isEquipment: true,
-    image: "/henrik.png",
+    image: "/sound.png",
   },
 ];
