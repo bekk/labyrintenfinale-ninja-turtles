@@ -5,12 +5,10 @@ export function Info() {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-4">For enkeltpersoner</h2>
-            <p>
-              Vi tilbyr en innovativ plattform som forenkler prosessen med å
-              finne samarbeidsmuligheter med produksjoner som trenger din
-              kunnskap og ferdigheter innen filmproduksjon. Med våre tjenester
-              kan du raskt og effektivt koble deg sammen med relevante bedrifter
-              som ønsker å samarbeide.
+            <p className="text-xl">
+              Vi tilbyr en plattform som gjør det enkelt for deg å finne
+              produksjoner som trenger din kompetanse innen filmproduksjon, og
+              raskt koble deg med relevante bedrifter.
             </p>
           </div>
 
@@ -34,7 +32,7 @@ export function Info() {
 
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-4">For produksjonsteam</h2>
-            <p>
+            <p className="text-xl">
               Vår plattform gjør det enkelt for bedrifter å finne relevante
               fagfolk, som lydteknikere, fotografer og produsenter, lokalt.
               Bedrifter kan effektivt koble seg med talentfulle enkeltpersoner
@@ -47,7 +45,7 @@ export function Info() {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-4">Fokus på bærekraft</h2>
-            <p>
+            <p className="text-xl">
               Vi bidrar til å redusere klimagassutslipp, ved å koble
               pruduksjoner opp med lokale og gode fagfolk.
             </p>
