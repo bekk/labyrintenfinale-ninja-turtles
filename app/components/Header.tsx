@@ -31,7 +31,7 @@ export default function Header() {
         {loggedIn &&
           (isCompany ? <p>Bedriftskonto</p> : <p>Enkeltpersonskonto</p>)}
       </div>
-      <div className="flex space-x-8 items-center">
+      <div className="flex space-x-8 items-center font-medium text-xl">
         <NavLink to="/company-ads">
           <a className="hover:underline">Oppdrag</a>
         </NavLink>
